@@ -11,13 +11,13 @@ body {
     height: 45vw;
     justify-content: center;
     align-items: center;
-    background-image: url(https://i.imgur.com/iZAmOwZ.jpg);
+    background-color: #0C0101;
 }
 
 .container {
     width: 720px;
     max-width: 75%;
     background-color: azure;
-    border-radius: 5em;
+    border-radius: 3em;
     padding: 5em;
 }
