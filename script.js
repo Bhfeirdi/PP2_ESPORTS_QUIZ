@@ -131,34 +131,34 @@ const myQuestions = [
     },
 
     {
-        question: '',
+        question: 'In the "Halo" franchise, what does the announcer say if a player gets 10 enemy kills without dying?',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'Killing Frenzy', correct: true },
+          { text: 'Rampage', correct: false }
         ]
       },
 
     {
-        question: '',
+        question: 'In a famous "Starcraft" moment, who abandoned the game for fear of loss to an enemy illusion army?, ',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'IDRA', correct: true },
+          { text: 'HUK', correct: false }
         ]
     },
 
     {
-        question: '',
+        question: 'In the semifinal match held at Evolution Championship Series 2004 between Daigo Umehara and Justin Wong, what name was given to the sequence of perfect parries to win the round?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: 'Daigo Clutch', correct: false },
+          { text: 'Moment #37', correct: true }
         ]
       },
 
     {
-        question: '',
+        question: 'Originally planned for Stokholm, where was the 10th International DOTA 2 tournament moved to last minute due to COVID-19?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: 'Chicago', correct: false },
+          { text: 'Bucharest', correct: true }
         ]
     },
 
