@@ -1,6 +1,7 @@
 
+//-------------------------------------- QUESTIONS ARRAY----------------------------------------------------//
 
-const questions = [
+const myQuestions = [
     {
         question: 'What is the name of the only team in DOTA 2 history to win "The Aegis of Champions", the highest honor in competitive Dota?',
         answers: [
@@ -58,74 +59,74 @@ const questions = [
       },
 
     {
-        question: '',
+        question: 'What is the name of what is considered the first ever E-Sports competition held on the 19th of October 1972 at Stanford University?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: 'Pong Champs!', correct: false },
+          { text: 'Spacewar!', correct: true }
         ]
     },
 
     {
-        question: '',
+        question: 'Which CS:GO team used the controversial "Olofboost" strategy at DreamHack Winter 2014',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'Fnatic', correct: true },
+          { text: 'Cloud9', correct: false }
         ]
       },
 
     {
-        question: '',
+        question: 'At The International 2, which DOTA 2 team got a team wipe with stolen spells and quick reactions in a sequence commonly refered to by fasns as "The Play"?',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'NAVI', correct: true },
+          { text: 'Invictus Gaming', correct: false }
         ]
     },
 
     {
-        question: '',
+        question: 'As of February 2022, how many Champions are there in League of Legends?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: '133', correct: false },
+          { text: '159', correct: true }
         ]
       },
 
     {
-        question: '',
+        question: 'Rocket League is a remake of what other game?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: 'Rocket Ball', correct: false },
+          { text: 'Supersonic Acrobatic Rocket-Powered Battle-Cars', correct: true }
         ]
     },
 
     {
-        question: '',
+        question: 'In which of these two games does PSG E-Sports NOT compete? ',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'Tekken', correct: true },
+          { text: 'RAINBOW 6', correct: false }
         ]
       },
 
     {
-        question: '',
+        question: 'What term is used to refer to a game mechanic being made less effective?',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'Nerf', correct: true },
+          { text: 'Downgrade', correct: false }
         ]
     },
 
     {
-        question: '',
+        question: 'What was the name of the original open world battle royale map in "Call of Duty Modern Warfare"?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: 'Rebirth Island', correct: false },
+          { text: 'Verdansk', correct: true }
         ]
       },
 
     {
-        question: '',
+        question: 'What date was "PlayerUnknowns Battlegrounds" officiallt released?',
         answers: [
-          { text: '', correct: false },
-          { text: '', correct: true }
+          { text: '12th November 2020', correct: false },
+          { text: '20th December 2017', correct: true }
         ]
     },
 
