@@ -50,10 +50,10 @@ const questions = [
     },
 
     {
-        question: '',
+        question: 'Mang0, the well known Super Smash Bros Melee player, began his career playing as Jigglypuff, but who became his main cgaracter since 2011?',
         answers: [
-          { text: '', correct: true },
-          { text: '', correct: false }
+          { text: 'Luigi', correct: false },
+          { text: 'Fox', correct: true }
         ]
       },
 
