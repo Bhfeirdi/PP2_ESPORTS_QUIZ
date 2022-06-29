@@ -1,104 +1,85 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-body {
+    font-family: Gotham Rounded;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
     display: flex;
     width: 100vw;
-    max-width: 1920px;
-    height: 100vw;
-    max-height: 1080px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #0C0101;
-}
-
-.container {
-    width: 720px;
-    max-width: 75%;
-    background-color: whitesmoke;
-    border-radius: 3em;
-    padding: 60px;
-    box-shadow: 0 0 1em 1em whitesmoke;
-}
-
-/* Button Styles */
-
-.button_layout {
+    background-color: hsl(var(--hue), 100%, 20%);
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 5em;
-
-}
-
-.button {
-    border: 2px solid black;
-    border-radius: 2em;
-    padding: 1em 1em;
-    font-size: large;
-    transition: .5s;
-}
-
-.play_button {
-    font-size: xx-large;
-    font-weight: bolder;
-    padding: 1.5em 3em;
-}
-
-.next_button {
-    font-size: xx-large;
-    font-weight: bolder;
-    padding: 1.5em 3em;
-}
-
-.play_next {
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hide {
+  }
+  
+  .hide {
     display: none;
-}
-
-/* Hover and colour change controls */
-
-.button:hover {
-    background-color: aqua;
-}
-
-.button.true {
-    background-color: darkgreen;
-}
-
-.button.false {
-    background-color: crimson;
-}
-
-/* Media Queries */
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-}
-
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: landscape) {
-
-}
-*/
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
+  }
