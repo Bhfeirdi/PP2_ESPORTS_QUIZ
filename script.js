@@ -1,22 +1,70 @@
 const playButton = document.getElementById("play_button")
+const nextButton = document.getElementById("next_button")
 const quizContainer = document.getElementById("quiz_container")
+const questionElement = document.getElementById("random_question")
+const answerButtonElement = document.getElementById("answers")
+let questionRandomiser
+let currentQuestions
+
 
 playButton.addEventListener("click", playGame)
 
 function playGame() {
     playButton.classList.add("hide")
+    questionRandomiser = myQuestions.sort(() => Math.random() -.5)
+    currentQuestions = 0
     quizContainer.classList.remove("hide")
+    selectNextQuestion()
 }
 
 function selectNextQuestion() {
+    resetState()
+    showQuestion(questionRandomiser[currentQuestions])
+}
 
+function showQuestion(myQuestions) {
+    questionElement.innerText = myQuestions.myQuestions
+    myQuestions.answers.forEach(answers => {
+        const button = document.createElement("button")
+        button.classList.add("button")
+        if (answers.correct) {
+            button.dataset.correct = answers.correct
+        }
+        button.addEventListener("click", chooseAnswer)
+    })
+}
+
+function resetState() {
+    nextButton.classList.add("hide")
+    while (answerButtonElement.removeChild) {
+        answerButtonElement.removeChild
+        (answerButtonElement.firstChild)
+    }
 }
 
 function chooseAnswer() {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
 
 }
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add("correct")
+    } else {
+        element.classList.add("wrong")
+    }
+}
 
+function clearStatusClass (element) {
+    element.classList.remove("correct")
+    element.classList.remove("wrong")
+}
 
 
 
