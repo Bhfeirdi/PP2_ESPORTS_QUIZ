@@ -25,6 +25,8 @@ body {
     box-shadow: 0 0 1em 1em whitesmoke;
 }
 
+/* Button Styles */
+
 .button_layout {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -52,6 +54,18 @@ body {
     padding: 1.5em 3em;
 }
 
+.play_next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Hover and colour change controls */
+
 .button:hover {
     background-color: aqua;
 }
@@ -62,4 +76,29 @@ body {
 
 .button.false {
     background-color: crimson;
+}
+
+/* Media Queries */
+/*
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+
+}
+*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
 }
