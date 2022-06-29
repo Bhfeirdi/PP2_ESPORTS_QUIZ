@@ -23,6 +23,12 @@
     padding: 2em;
     box-shadow: 0 0 .5em .5em;
   }
+
+  .question {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
   
   .btn-grid {
     display: flex;
