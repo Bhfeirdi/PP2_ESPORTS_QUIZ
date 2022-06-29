@@ -1,7 +1,11 @@
+const playButton = document.getElementById("play_button")
+const quizContainer = document.getElementById("quiz_container")
 
+playButton.addEventListener("click", playGame)
 
 function playGame() {
-
+    playButton.classList.add("hide")
+    quizContainer.classList.remove("hide")
 }
 
 function selectNextQuestion() {
