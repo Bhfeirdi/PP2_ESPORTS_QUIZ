@@ -43,3 +43,11 @@ body {
 .button:hover {
     background-color: aqua;
 }
+
+.button.true {
+    background-color: darkgreen;
+}
+
+.button.false {
+    background-color: crimson;
+}
