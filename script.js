@@ -1,4 +1,21 @@
 
+
+function playGame() {
+
+}
+
+function selectNextQuestion() {
+
+}
+
+function chooseAnswer() {
+
+}
+
+
+
+
+
 //-------------------------------------- QUESTIONS ARRAY----------------------------------------------------//
 
 const myQuestions = [
