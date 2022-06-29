@@ -25,15 +25,17 @@ function selectNextQuestion() {
     showQuestion(questionRandomiser[currentQuestions])
 }
 
-function showQuestion(myQuestions) {
-    questionElement.innerText = myQuestions.myQuestions
-    myQuestions.answers.forEach(answers => {
+function showQuestion(random_question) {
+    questionElement.innerText = random_question.myQuestions
+    random_question.answers.forEach(answer => {
         const button = document.createElement("button")
+        button.innerText = answer.text
         button.classList.add("button")
-        if (answers.correct) {
-            button.dataset.correct = answers.correct
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
         }
         button.addEventListener("click", chooseAnswer)
+        answerButtonElement.appendChild(button)
     })
 }
 
@@ -70,7 +72,7 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass (element) {
+function clearStatusClass(element) {
     element.classList.remove("correct")
     element.classList.remove("wrong")
 }
