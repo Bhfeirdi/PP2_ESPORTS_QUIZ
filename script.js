@@ -239,4 +239,5 @@ const questions = [
           { text: 'Bucharest', correct: true }
         ]
     },
+    
 ]
