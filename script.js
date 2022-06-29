@@ -1,85 +1,3 @@
-/*
-const playButton = document.getElementById("play_button")
-const nextButton = document.getElementById("next_button")
-const quizContainer = document.getElementById("quiz_container")
-const questionElement = document.getElementById("random_question")
-const answerButtonElement = document.getElementById("answers")
-
-let questionRandomiser, currentQuestions
-
-
-playButton.addEventListener("click", playGame)
-nextButton.addEventListener("click", () => {
-    currentQuestions ++
-    selectNextQuestion()
-})
-
-function playGame() {
-    playButton.classList.add("hide")
-    questionRandomiser = random_question.sort(() => Math.random() -.5)
-    currentQuestions = 0
-    quizContainer.classList.remove("hide")
-    selectNextQuestion()
-}
-
-function selectNextQuestion() {
-    resetState()
-    showQuestion(questionRandomiser[currentQuestions])
-}
-
-function showQuestion(random_question) {
-    questionElement.innerText = random_question.myQuestions
-    random_question.answers.forEach(answer => {
-        const button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add("button")
-        if (answer.correct) {
-            button.dataset.correct = answer.correct
-        }
-        button.addEventListener("click", chooseAnswer)
-        answerButtonElement.appendChild(button)
-    })
-}
-
-function resetState() {
-    nextButton.classList.add("hide")
-    while (answerButtonElement.removeChild) {
-        answerButtonElement.removeChild
-        (answerButtonElement.firstChild)
-    }
-    nextButton.classList.remove("hide")
-}
-
-function chooseAnswer() {
-    const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
-    Array.from(answerButtonElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
-    if (questionRandomiser.length > currentQuestions + 1) {
-        nextButton.classList.remove("hide")
-    } else {
-        playButton.innerText = "Restart"
-        playButton.classList.remove("hide")
-    }
-}
-
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
-    if (correct) {
-        element.classList.add("correct")
-    } else {
-        element.classList.add("wrong")
-    }
-}
-
-function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("wrong")
-}
-*/
-
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
@@ -159,8 +77,7 @@ function clearStatusClass(element) {
 }
 
 
-
-//-------------------------------------- QUESTIONS ARRAY----------------------------------------------------//
+//------------------------------------- QUESTIONS ARRAY----------------------------------------------------//
 
 const questions = [
     {
