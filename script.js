@@ -3,11 +3,14 @@ const nextButton = document.getElementById("next_button")
 const quizContainer = document.getElementById("quiz_container")
 const questionElement = document.getElementById("random_question")
 const answerButtonElement = document.getElementById("answers")
-let questionRandomiser
-let currentQuestions
+let questionRandomiser, currentQuestions
 
 
 playButton.addEventListener("click", playGame)
+nextButton.addEventListener("click", () => {
+    currentQuestions++
+    selectNextQuestion()
+})
 
 function playGame() {
     playButton.classList.add("hide")
@@ -40,6 +43,7 @@ function resetState() {
         answerButtonElement.removeChild
         (answerButtonElement.firstChild)
     }
+    nextButton.classList.remove("hide")
 }
 
 function chooseAnswer() {
@@ -49,7 +53,12 @@ function chooseAnswer() {
     Array.from(answerButtonElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-
+    if (questionRandomiser.length > currentQuestions + 1) {
+        nextButton.classList.remove("hide")
+    } else {
+        playButton.innerText = "Restart"
+        playButton.classList.remove("hide")
+    }
 }
 
 function setStatusClass(element, correct) {
