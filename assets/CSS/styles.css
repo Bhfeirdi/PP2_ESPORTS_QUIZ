@@ -8,7 +8,9 @@ body {
     margin: 0;
     display: flex;
     width: 100vw;
-    height: 45vw;
+    max-width: 1920px;
+    height: 100vw;
+    max-height: 1080px;
     justify-content: center;
     align-items: center;
     background-color: #0C0101;
@@ -17,7 +19,20 @@ body {
 .container {
     width: 720px;
     max-width: 75%;
-    background-color: azure;
+    background-color: whitesmoke;
     border-radius: 3em;
-    padding: 5em;
+    padding: 60px;
+    box-shadow: 0 0 1em 1em whitesmoke;
+}
+
+.button_layout {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 5em;
+
+}
+
+.button {
+    border: 2px solid black;
+    border border-radius: 2em;
 }
