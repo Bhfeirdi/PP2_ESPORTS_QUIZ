@@ -40,6 +40,18 @@ body {
     transition: .5s;
 }
 
+.play_button {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 1.5em 3em;
+}
+
+.next_button {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 1.5em 3em;
+}
+
 .button:hover {
     background-color: aqua;
 }
