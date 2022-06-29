@@ -37,4 +37,9 @@ body {
     border-radius: 2em;
     padding: 1em 1em;
     font-size: large;
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: aqua;
 }
