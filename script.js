@@ -14,7 +14,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  shuffledQuestions = questions.sort(() => Math.random() - .5) 
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
@@ -81,7 +81,7 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: 'What is the name of the only team in DOTA 2 history to win "The Aegis of Champions", the highest honor in competitive Dota?',
+        question: 'What is the name of the only team in DOTA 2 history to win "The Aegis of Champions", the highest honor in competitive Dota twice?',
         answers: [
           { text: 'Team OG', correct: true },
           { text: 'Gaming Galdiators', correct: false }
