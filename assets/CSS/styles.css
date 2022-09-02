@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Nova Square', cursive;
   }
  
   body {
@@ -12,7 +14,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: darkslategrey;
+    background-color: rgb(29, 26, 26);
   }
 
   .container {
@@ -75,3 +77,9 @@
   .hide {
     display: none;
   }
+
+  @media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 25rem;
+    }
+}
