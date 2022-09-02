@@ -52,7 +52,8 @@
   }
   
   .btn:hover {
-    background-color: aqua;
+    background: rgb(18, 93, 255);
+    color: whitesmoke ;
   }
   
   .btn.correct {
