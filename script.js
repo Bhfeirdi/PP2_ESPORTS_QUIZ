@@ -3,8 +3,13 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const progressText = document.querySelector('#progressText');
+const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progressBarFull');
 
 let shuffledQuestions, currentQuestionIndex
+let questionCounter = 0
+let score = 0
 
 
 startButton.addEventListener('click', startGame)
@@ -13,8 +18,13 @@ nextButton.addEventListener('click', () => {
   setNextQuestion()
 })
 
+const SCORE_POINTS = 100
+const MAX_QUESTIONS = 20
+
 function startGame() {
   startButton.classList.add('hide')
+  questionCounter = 0
+  score = 0
   shuffledQuestions = questions.sort(() => Math.random() - .5) 
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
@@ -24,6 +34,9 @@ function startGame() {
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
+  questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 }
 
 function showQuestion(question) {
@@ -50,7 +63,7 @@ function resetState() {
 
 function selectAnswer(e) {
   const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
+  const correct = selectedButton.dataset.correct;
   setStatusClass(document.body, correct)
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
@@ -70,6 +83,7 @@ function setStatusClass(element, correct) {
   } else {
     element.classList.add('wrong')
   }
+
 }
 
 function clearStatusClass(element) {
