@@ -3,14 +3,16 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+/*
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
-
+*/
+/*
 let shuffledQuestions, currentQuestionIndex
 let questionCounter = 0
 let score = 0
-
+*/
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
