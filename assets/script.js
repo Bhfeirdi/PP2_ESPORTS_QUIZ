@@ -17,14 +17,16 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-
+/*
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 20
-
+*/
 function startGame() {
   startButton.classList.add('hide')
+  /*
   questionCounter = 0
   score = 0
+  */
   shuffledQuestions = questions.sort(() => Math.random() - .5) 
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
@@ -34,9 +36,10 @@ function startGame() {
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
-  questionCounter++
+  /*questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    */
 }
 
 function showQuestion(question) {
