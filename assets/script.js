@@ -8,8 +8,9 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 */
-/*
+
 let shuffledQuestions, currentQuestionIndex
+/*
 let questionCounter = 0
 let score = 0
 */
