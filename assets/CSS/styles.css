@@ -26,7 +26,7 @@
     padding: 2em;
     box-shadow: 0 0 .5em .5em;
   }
-
+/*
   #progressBar {
     width: 20rem;
     height: 3rem;
@@ -41,7 +41,7 @@
     background: rgb(11,223,36);
     width: 0%;
 }
-
+*/
   .question {
     position: relative;
     justify-content: center;
